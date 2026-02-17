@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photo Selection</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .photo-box {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+
+        .photo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 2px solid #ccc;
+        }
+
+.cross {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 80px;        /* BIG cross */
+    color: red;
+
+    background: rgba(255, 255, 255, 0.6); /* semi-transparent cover */
+    font-weight: bold;
+}
+
+        .selected .cross {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Guess Who?</h2>
+
+<div class="gallery">
+
+    <!-- COPY THIS BLOCK 30 TIMES -->
+    <div class="photo-box" onclick="toggleCross(this)">
+        <span class="cross">✖</span>
+        <img src="photo1.jpg">
+    </div>
+
+    <div class="photo-box" onclick="toggleCross(this)">
+        <span class="cross">✖</span>
+        <img src="photo2.jpg">
+    </div>
+
+    <div class="photo-box" onclick="toggleCross(this)">
+        <span class="cross">✖</span>
+        <img src="photo3.jpg">
+    </div>
+
+   <div class="photo-box" onclick="toggleCross(this)">
+        <span class="cross">✖</span>
+        <img src="photo4.jpg">
+    </div>
+
+   <div class="photo-box" onclick="toggleCross(this)">
+        <span class="cross">✖</span>
+        <img src="photo5.jpg">
+    </div>
+
+   <div class="photo-box" onclick="toggleCross(this)">
+        <span class="cross">✖</span>
+        <img src="photo6.jpg">
+    </div>
+
+   <div class="photo-box" onclick="toggleCross(this)">
+        <span class="cross">✖</span>
+        <img src="photo7.jpg">
+    </div>
+
+   <div class="photo-box" onclick="toggleCross(this)">
+        <span class="cross">✖</span>
+        <img src="photo8.jpg">
+    </div>
+
+   <div class="photo-box" onclick="toggleCross(this)">
+        <span class="cross">✖</span>
+        <img src="photo9.jpg">
+    </div>
+
+   <div class="photo-box" onclick="toggleCross(this)">
+        <span class="cross">✖</span>
+        <img src="photo10.jpg">
+    </div>
+
+   <div class="photo-box" onclick="toggleCross(this)">
+        <span class="cross">✖</span>
+        <img src="photo11.jpg">
+    </div>
+
+   <div class="photo-box" onclick="toggleCross(this)">
+        <span class="cross">✖</span>
+        <img src="photo12.jpg">
+    </div>
+
+   <div class="photo-box" onclick="toggleCross(this)">
+        <span class="cross">✖</span>
+        <img src="photo13.jpg">
+    </div>
+
+   <div class="photo-box" onclick="toggleCross(this)">
+        <span class="cross">✖</span>
+        <img src="photo14.jpg">
+    </div>
+
+   <div class="photo-box" onclick="toggleCross(this)">
+        <span class="cross">✖</span>
+        <img src="photo15.jpg">
+    </div>
+
+   <div class="photo-box" onclick="toggleCross(this)">
+        <span class="cross">✖</span>
+        <img src="photo16.jpg">
+    </div>
+
+   <div class="photo-box" onclick="toggleCross(this)">
+        <span class="cross">✖</span>
+        <img src="photo17.jpg">
+    </div>
+
+   <div class="photo-box" onclick="toggleCross(this)">
+        <span class="cross">✖</span>
+        <img src="photo18.jpg">
+    </div>
+
+   <div class="photo-box" onclick="toggleCross(this)">
+        <span class="cross">✖</span>
+        <img src="photo19.jpg">
+    </div>
+
+   <div class="photo-box" onclick="toggleCross(this)">
+        <span class="cross">✖</span>
+        <img src="photo20.jpg">
+    </div>
+
+   <div class="photo-box" onclick="toggleCross(this)">
+        <span class="cross">✖</span>
+        <img src="photo21.jpg">
+    </div>
+
+   <div class="photo-box" onclick="toggleCross(this)">
+        <span class="cross">✖</span>
+        <img src="photo22.jpg">
+    </div>
+
+   <div class="photo-box" onclick="toggleCross(this)">
+        <span class="cross">✖</span>
+        <img src="photo23.jpg">
+    </div>
+
+   <div class="photo-box" onclick="toggleCross(this)">
+        <span class="cross">✖</span>
+        <img src="photo24.jpg">
+    </div>
+
+   <div class="photo-box" onclick="toggleCross(this)">
+        <span class="cross">✖</span>
+        <img src="photo25.jpg">
+    </div>
+
+
+
+
+
+    <!-- keep adding till photo30.jpg -->
+
+</div>
+
+<script>
+    function toggleCross(box) {
+        box.classList.toggle("selected");
+    }
+</script>
+
+</body>
+</html>
